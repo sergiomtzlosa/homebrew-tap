@@ -14,6 +14,6 @@ class NeuroVector < Formula
   depends_on :macos
 
   def install
-    bin.install "neuro-vector-v1.0.0-macos-arm64/neuro-vector"
+    bin.install "neuro-vector"
   end
 end
