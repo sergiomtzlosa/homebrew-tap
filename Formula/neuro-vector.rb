@@ -12,6 +12,7 @@ class NeuroVector < Formula
 
   depends_on arch: :arm64
   depends_on :macos
+  depends_on "sdl2"
 
   def install
     bin.install "neuro-vector"
