@@ -89,6 +89,22 @@ brew install --cask sergiomtzlosa/tap/quantum-lab
 | `rubik-solver` | RubikSolver | Rubik's Cube solver |
 | `new-file-creation-2` | New File Creation 2 | Create files from templates in Finder or command line |
 
+## Command-Line Tools
+
+### neuro-vector
+
+Command-line tool from [sergiomtzlosa/neuro-vector](https://github.com/sergiomtzlosa/neuro-vector). Available as a formula (not a cask), arm64 only, and depends on Homebrew's `sdl2`:
+
+```bash
+brew install sergiomtzlosa/tap/neuro-vector
+```
+
+The binary links against Homebrew's SDL2 at runtime, so run it with:
+
+```bash
+DYLD_LIBRARY_PATH="$(brew --prefix sdl2)/lib" neuro-vector
+```
+
 ## Installation Examples
 
 ### Install a single application
